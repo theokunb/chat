@@ -1,0 +1,73 @@
+﻿<Window x:Class="chat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:chat"
+        xmlns:viewmodel="clr-namespace:chat.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="480" Width="360">
+    <Window.DataContext>
+        <viewmodel:MainViewModel/>
+    </Window.DataContext>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0"
+                   Content="name:"
+                   FontSize="25"/>
+            <TextBox Grid.Column="1"
+                     Text="{Binding Name}"
+                     FontSize="25"
+                     Margin="2"/>
+            <Button Grid.Column="2"
+                    Content="connect"
+                    FontSize="15"
+                    Margin="0,5"
+                    Command="{Binding ConnectCommand}"/>
+        </Grid>
+
+        <ItemsControl Grid.Row="1"
+                      ItemsSource="{Binding Messages}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Vertical"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding .}"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Column="0"
+                     x:Name="textTessage"
+                     FontSize="20"
+                     Margin="5"/>
+            <Button Grid.Column="1"
+                    Content=">"
+                    FontSize="20"
+                    Margin="5"
+                    Command="{Binding SendCommand}"
+                    CommandParameter="{Binding ElementName=textTessage, Path=Text}"
+                    IsEnabled="{Binding IsConnected}"/>
+        </Grid>
+    </Grid>
+</Window>

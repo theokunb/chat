@@ -1,0 +1,16 @@
+C:\Users\016MakarovAK\source\repos\chat\chat\bin\Debug\chat.exe.config
+C:\Users\016MakarovAK\source\repos\chat\chat\bin\Debug\chat.exe
+C:\Users\016MakarovAK\source\repos\chat\chat\bin\Debug\chat.pdb
+C:\Users\016MakarovAK\source\repos\chat\chat\obj\Debug\MainWindow.g.cs
+C:\Users\016MakarovAK\source\repos\chat\chat\obj\Debug\App.g.cs
+C:\Users\016MakarovAK\source\repos\chat\chat\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\016MakarovAK\source\repos\chat\chat\obj\Debug\chat_MarkupCompile.cache
+C:\Users\016MakarovAK\source\repos\chat\chat\obj\Debug\chat_MarkupCompile.lref
+C:\Users\016MakarovAK\source\repos\chat\chat\obj\Debug\MainWindow.baml
+C:\Users\016MakarovAK\source\repos\chat\chat\obj\Debug\chat.g.resources
+C:\Users\016MakarovAK\source\repos\chat\chat\obj\Debug\chat.Properties.Resources.resources
+C:\Users\016MakarovAK\source\repos\chat\chat\obj\Debug\chat.csproj.GenerateResource.cache
+C:\Users\016MakarovAK\source\repos\chat\chat\obj\Debug\chat.csproj.CoreCompileInputs.cache
+C:\Users\016MakarovAK\source\repos\chat\chat\obj\Debug\chat.exe
+C:\Users\016MakarovAK\source\repos\chat\chat\obj\Debug\chat.pdb
+C:\Users\016MakarovAK\source\repos\chat\chat\obj\Debug\chat.csproj.AssemblyReference.cache
